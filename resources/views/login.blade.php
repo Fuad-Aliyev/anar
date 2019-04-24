@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+        <div class="container box">
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+        </div>
     <div class="row justify-content-center">
         <div class="card mt-5" style="width: 30rem;">
             {{-- Register form --}}
