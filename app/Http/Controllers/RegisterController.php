@@ -26,7 +26,8 @@ class RegisterController extends Controller
         $this->validate($request, [
            'name' => 'required',
             'surname' => 'required',
-            'email' => 'required|email'
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
         $user = new Register();
         $user->name = $request->name;
@@ -34,6 +35,7 @@ class RegisterController extends Controller
         $user->email = $request->email;
         $user->password = $request->password;
         $user->save();
+        
 
         Session::put('door', 'open');
 
@@ -48,16 +50,30 @@ class RegisterController extends Controller
     }
 
     public function logs(Request $request) {
+        $this->validate($request, [
+             'password' => 'required',
+             'email' => 'required|email'
+         ]);
+
         $email = $request->input('email');
         $password = $request->input('password');
 
         $data = DB::select('select id from registers where email=? and password=?', [$email, $password]);
 
         if (count($data)) {
+            Session::put('door', 'open');
             return redirect('/home');
+
         } else {
             echo "please enter correct email and password";
         }
 
+    }
+
+    public function logout() {
+       
+        Session::remove('door');
+
+        return redirect('/');
     }
 }
