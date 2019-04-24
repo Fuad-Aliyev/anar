@@ -81,6 +81,7 @@
 
     <div class="content">
         <form class="" action="{{URL::to('/logs')}}" method="post">
+            @csrf <!-- {{csrf_field()}} -->
             <input type="text" name="email" value="">
             <br><br>
             <input type="password" name="password" value="">

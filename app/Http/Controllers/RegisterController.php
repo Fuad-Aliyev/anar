@@ -8,14 +8,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use Illuminate\Http\Request;
-use app\Register;
+use App\Register;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 
 class RegisterController extends Controller
 {
+    public function index() {
+        return view('home');
+    }
+
     public function store(Request $request) {
+        $this->validate($request, [
+           'name' => 'required',
+            'surname' => 'required',
+            'email' => 'required|email'
+        ]);
         $user = new Register();
         $user->name = $request->name;
         $user->surname = $request->surname;
@@ -23,7 +35,16 @@ class RegisterController extends Controller
         $user->password = $request->password;
         $user->save();
 
-        return redirect('/welcome');
+        Session::put('door', 'open');
+
+        $fulname = $request->name . ' ' . $request->surname;
+        $data = array(
+            'fulname' => $fulname
+        );
+        Mail::to($user->email)->send(new SendMail($data));
+
+
+        return redirect('/home');
     }
 
     public function logs(Request $request) {
@@ -33,7 +54,7 @@ class RegisterController extends Controller
         $data = DB::select('select id from registers where email=? and password=?', [$email, $password]);
 
         if (count($data)) {
-            echo 'successful';
+            return redirect('/home');
         } else {
             echo "please enter correct email and password";
         }

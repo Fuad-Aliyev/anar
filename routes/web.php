@@ -20,3 +20,6 @@ Route::view('/login', 'login');
 
 Route::post('/store', "RegisterController@store");
 Route::post('/logs', "RegisterController@logs");
+
+Route::get('/home', "RegisterController@index")->name('home')->middleware('admin');
+
