@@ -15,6 +15,7 @@ class MultipleMail implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     protected $emails;
+    protected $content;
     /**
      * Create a new job instance.
      *
@@ -22,10 +23,11 @@ class MultipleMail implements ShouldQueue
      */
 
      
-    public function __construct($emails)
+    public function __construct($emails, $content)
     {
         //
         $this->emails = $emails;
+        $this->content = $content;
     }
 
     /**
@@ -36,7 +38,7 @@ class MultipleMail implements ShouldQueue
     public function handle()
     {
         //
-        $data = "true";
+        $data = $this->content;
         $emails = $this->emails;
         foreach($emails as $email) {
             $email = str_replace(' ', '', $email);

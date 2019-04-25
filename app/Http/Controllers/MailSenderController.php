@@ -50,11 +50,12 @@ class MailSenderController extends Controller
             $client  = new Client();
             $client->date = $date;
             $client->content = $content;
-            $client->fk_user = $obj[$client_email];
+            $client->fk_user = Session::get('user');
+            $client->email = $client_email;
             $client->save();
         }
 
-        mMail::dispatch($client_emails)->delay(now()->addDays(7));
+        mMail::dispatch($client_emails, $client->content)->delay(now()->addDays(7));
 
         return back();
     }

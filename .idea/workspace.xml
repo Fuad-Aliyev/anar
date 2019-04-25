@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db4d194d-a001-4e5f-bd4a-9044e9664e2e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/MultipleMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/MultipleMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/SendMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/SendMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_24_131803_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_24_131803_create_clients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mul_email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mul_email.blade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -141,40 +146,41 @@
     <session id="-701196345">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="3" />
           <entry key="example" value="1" />
-          <entry key="php" value="65" />
+          <entry key="php" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="Blade" value="25" />
-          <entry key="PHP" value="40" />
+          <entry key="Blade" value="28" />
+          <entry key="PHP" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="207" />
-          <entry key="php" value="3346" />
+          <entry key="php" value="3639" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="207" />
-          <entry key="Blade" value="261" />
-          <entry key="PHP" value="3085" />
+          <entry key="Blade" value="268" />
+          <entry key="PHP" value="3371" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -186,11 +192,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+            <state relative-caret-position="884">
+              <caret line="57" column="70" lean-forward="true" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
               <folding>
                 <element signature="e#122#148#0#PHP" expanded="true" />
               </folding>
@@ -198,11 +204,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/MultipleMail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="646">
+              <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -210,11 +225,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Mail/MultipleMail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="578">
+              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding>
                 <element signature="e#28#57#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/mul_email.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -229,31 +253,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/database/migrations/2019_04_23_200424_create_registers_table.php" />
-        <option value="$PROJECT_DIR$/app/Register.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-        <option value="$PROJECT_DIR$/app/Mail/SendMail.php" />
         <option value="$PROJECT_DIR$/resources/views/register_email.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/home.php" />
         <option value="$PROJECT_DIR$/resources/views/register.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/main.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" />
         <option value="$PROJECT_DIR$/resources/views/inc/nav/main.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_24_131803_create_clients_table.php" />
-        <option value="$PROJECT_DIR$/app/Client.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/mul_email.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_24_152941_create_jobs_table.php" />
         <option value="$PROJECT_DIR$/app/Mail/MultipleMail.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_25_062046_create_receivers_table.php" />
+        <option value="$PROJECT_DIR$/app/Receiver.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_24_152941_create_jobs_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_24_131803_create_clients_table.php" />
+        <option value="$PROJECT_DIR$/app/Client.php" />
         <option value="$PROJECT_DIR$/app/Jobs/MultipleMail.php" />
+        <option value="$PROJECT_DIR$/resources/views/mul_email.blade.php" />
+        <option value="$PROJECT_DIR$/app/Register.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php" />
+        <option value="$PROJECT_DIR$/app/Mail/SendMail.php" />
       </list>
     </option>
   </component>
@@ -349,8 +375,8 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1250" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -384,6 +410,23 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="anar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anar" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Mail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="anar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anar" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="anar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="anar" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -427,16 +470,17 @@
       <workItem from="1556109950822" duration="10351000" />
       <workItem from="1556130682952" duration="320000" />
       <workItem from="1556131274175" duration="719000" />
+      <workItem from="1556172983855" duration="2596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27388000" />
+    <option name="totallyTimeSpent" value="29984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="1358" y="-8" width="1096" height="1896" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31996974" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.41505793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -449,7 +493,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.9476268" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34543392" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -536,35 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_131803_create_clients_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="49" />
@@ -588,27 +604,6 @@
     <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/SendMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_152941_create_jobs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -623,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/mul_email.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -637,37 +625,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/register_email.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_25_062046_create_receivers_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="40" selection-end-line="2" />
+        <state relative-caret-position="306">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_131803_create_clients_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-          <folding>
-            <element signature="e#122#148#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_152941_create_jobs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Receiver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/MultipleMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/MultipleMail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="578">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding>
             <element signature="e#28#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/MultipleMail.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/mul_email.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/SendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="34" column="64" lean-forward="true" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/register_email.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailSenderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="57" column="70" lean-forward="true" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+          <folding>
+            <element signature="e#122#148#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

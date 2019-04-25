@@ -36,8 +36,11 @@ class RegisterController extends Controller
         $user->password = $request->password;
         $user->save();
         
+        $data = DB::select('select id from registers where email=?', [$user->email]);
+        $user_id = $data[0]->id;
 
         Session::put('door', 'open');
+        Session::put('user', $user_id);
 
         $fulname = $request->name . ' ' . $request->surname;
         $data = array(
@@ -59,9 +62,11 @@ class RegisterController extends Controller
         $password = $request->input('password');
 
         $data = DB::select('select id from registers where email=? and password=?', [$email, $password]);
+        $user_id = $data[0]->id;
 
         if (count($data)) {
             Session::put('door', 'open');
+            Session::put('user', $user_id);
             return redirect('/home');
 
         } else {
@@ -73,6 +78,7 @@ class RegisterController extends Controller
     public function logout() {
        
         Session::remove('door');
+        Session::remove('user');
 
         return redirect('/');
     }

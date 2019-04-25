@@ -1,2 +1,2 @@
 <p>Hi, </p>
-<p>You have sent email!</p>
+<p>{{$data}}</p>

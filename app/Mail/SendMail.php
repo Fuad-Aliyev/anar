@@ -31,7 +31,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('anar@cooper.info')->subject('Welcome to registering')
+        return $this->from('anar@cooper.info')->subject('Welcome to EmailSenderApp')
             ->view('register_email')->with('data', $this->data);
     }
 }
